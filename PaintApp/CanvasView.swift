@@ -183,6 +183,13 @@ class CanvasView: UIImageView {
     }
     
     /**
+     save
+    */
+    func saveImage() {
+        UIImageWriteToSavedPhotosAlbum(self.image!, self, nil, nil)
+    }
+    
+    /**
      座標をキャンバスのサイズに変換
      
      - parameter originalPoint : 座標

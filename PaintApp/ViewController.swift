@@ -72,6 +72,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         canvasView.undoPath()
     }
     
+    // save
+    @IBAction func onClickSave(_ sender: Any) {
+        canvasView.saveImage()
+    }
+    
     // scrollview delegetes
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.canvasView
