@@ -15,12 +15,13 @@ class CanvasView: UIImageView {
     // 直前のタッチ座標の保存用
     var lastPoint: CGPoint?
     // 描画用の線の太さの保存用
-    //    var lineWidth: CGFloat?
-    var drawColor = UIColor()
+    var lineWidth: CGFloat = 10.0
+    var drawColor = UIColor.black
+    // 消しゴム用Alpha
+    var elaseAlpha: CGFloat = 1.0
     // ベジェ曲線描画用
-    var bezierPath = UIBezierPath()
-    // デフォルトの線の太さ
-    let defaultLineWidth: CGFloat = 10.0
+    var bezierPath : UIBezierPath?
+    var cgBlendMode = CGBlendMode.normal
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -99,7 +100,9 @@ class CanvasView: UIImageView {
         // 用意したRectに現在のimageを描画
         self.image?.draw(in: canvasRect)
         drawColor.setStroke()
-        bezierPath.stroke()
+        
+        bezierPath.stroke(with: cgBlendMode, alpha: elaseAlpha)
+        //        bezierPath.stroke()
         // 描画後のImageを取得
         let imageAfterDraw = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -123,25 +126,24 @@ class CanvasView: UIImageView {
         }
         // タッチ座標
         let touchPoint = drawGesture.location(in: self)
-        drawColor = UIColor.black
         switch drawGesture.state {
         case .began:
+            bezierPath = UIBezierPath()
             lastPoint = touchPoint
-            
             // touchPointの座標はscrollView基準なのでキャンバスの大きさに合わせた座標に変換
             let lastPointForCanvasSize = convertPointForCanvasSize(originalPoint: lastPoint!, canvasSize: canvas.size)
             // 線を丸く
-            bezierPath.lineCapStyle = .round
+            bezierPath?.lineCapStyle = .round
             // 先の太さ
-            bezierPath.lineWidth = defaultLineWidth
-            bezierPath.move(to: lastPointForCanvasSize)
+            bezierPath?.lineWidth = lineWidth
+            bezierPath?.move(to: lastPointForCanvasSize)
             
         case .changed:
             
             let newPoint = touchPoint
             
             // Draw実行しDraw後のimage取得
-            let imageAfterDraw = drawGestureAtChanged(canvas: canvas, lastPoint: lastPoint!, newPoint: newPoint, bezierPath: bezierPath)
+            let imageAfterDraw = drawGestureAtChanged(canvas: canvas, lastPoint: lastPoint!, newPoint: newPoint, bezierPath: bezierPath!)
             
             // draw画像をCanvasにセット
             self.image = imageAfterDraw
