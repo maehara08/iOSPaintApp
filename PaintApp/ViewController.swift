@@ -21,7 +21,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.maximumZoomScale = 4.0                   // 最大拡大率
         scrollView.zoomScale = 1.0                          // 表示時の拡大率(初期値)
         canvasView.initCanvas(uiView: view, scrollView: scrollView)
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,6 +60,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func setEraser(_ sender: Any) {
         canvasView.elaseAlpha = 0.0
         canvasView.cgBlendMode = CGBlendMode.clear
+    }
+    
+    // やり直し
+    @IBAction func onClickRedo(_ sender: Any) {
+        canvasView.redoPath()
+    }
+    
+    // 元に戻す
+    @IBAction func onClickUndo(_ sender: Any) {
+        canvasView.undoPath()
     }
     
     // scrollview delegetes

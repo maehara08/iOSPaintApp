@@ -21,7 +21,12 @@ class CanvasView: UIImageView {
     var elaseAlpha: CGFloat = 1.0
     // ベジェ曲線描画用
     var bezierPath : UIBezierPath?
+    // blendmode https://lab.dolice.net/blog/2013/07/25/objc-ui-image-blend-mode/
     var cgBlendMode = CGBlendMode.normal
+    // undo のための保存
+    var saveImageArray = [UIImage]()
+    // 現在表示してるのは何番か
+    var currentDisplayCount = 0
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -50,6 +55,7 @@ class CanvasView: UIImageView {
         
         //実際のお絵描きで言うキャンバスの準備 (=何も描かれていないUIImageの作成)
         prepareCanvas()
+        self.saveImageArray.append(self.image!)
     }
     
     private func prepareCanvas() {
@@ -151,11 +157,29 @@ class CanvasView: UIImageView {
             lastPoint = newPoint
             
         case .ended:
+            while currentDisplayCount != saveImageArray.count - 1 {
+                saveImageArray.removeLast()
+            }
+            self.saveImageArray.append(self.image!)
+            currentDisplayCount += 1
             print("Finish dragging")
             
         default:
             ()
         }
+    }
+    
+    // やり直し
+    func redoPath() {
+        if currentDisplayCount >= saveImageArray.count-1 {return}
+        currentDisplayCount += 1
+        self.image = self.saveImageArray[currentDisplayCount]
+    }
+    // 元に戻す
+    func undoPath()  {
+        if currentDisplayCount <= 0 {return}
+        currentDisplayCount -= 1
+        self.image = self.saveImageArray[currentDisplayCount]
     }
     
     /**
