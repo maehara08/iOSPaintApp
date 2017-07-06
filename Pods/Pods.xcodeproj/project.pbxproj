@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04C9F6DCD6E4E53BC8CBA5F78B10AA22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1815647DEDEDF6214001464513D9576E /* Pods-PaintAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C1292CFBC9AAAFEE8DF3628934E5E6 /* Pods-PaintAppTests-dummy.m */; };
+		1D4349CA3F5209BC7D5479FB6F534B2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		44AE7543E1CD440B7AE09071F8D0FD01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		524409528BBBB9940C19649DAD016C38 /* Pods-PaintApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3D7B238E62768B6958F402A3B70E2 /* Pods-PaintApp-dummy.m */; };
+		5F6BCE062351101B4E8C58F7C5195883 /* Pods-PaintAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC72A55E8B861D8BCE283D89B780FCF /* Pods-PaintAppUITests-dummy.m */; };
+		76764CA01EBAD113289163ADE425AA8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7B713D9A426EC522EA953F7C3A02D90B /* Pods-PaintApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D95913F69ABFED2C774E308B86F87AF9 /* Pods-PaintApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF0AF5F791B0E5EA09CDCD79F706E25 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110A20D864C22E8570DA40FEABB3839 /* SlideMenuController.swift */; };
+		8829363D1E9F4A6E59D91B26A13ECFB5 /* Pods-PaintAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9301BB05CB617B21FA9BF3506CA9486D /* Pods-PaintAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		951F614EA01DAF13073C92A85676EA85 /* SlideMenuControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D26334D8CD6631080990206F7F1B5DB8 /* SlideMenuControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE26E84F75B04A36F67D16F86961AC05 /* SlideMenuControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E479D1C35C275A2F803A0FE06B17D /* SlideMenuControllerSwift-dummy.m */; };
+		EAC8CBAAA8D4D0954E308B823B609206 /* Pods-PaintAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DDE423BB1977F2FF518885EE4FC6B6B /* Pods-PaintAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2B1AFE024C018402449C72865ADC318 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DBE23B870D7D82FFA0757CD1F6FE88E;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C64675639E4CE0F7FA83286962B42BE /* Pods-PaintAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PaintAppTests.modulemap"; sourceTree = "<group>"; };
+		11B878A05A3C6E96625B9A753B47EF94 /* Pods-PaintAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaintAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		13920BA9A34B7B80F4D4D54C405722C0 /* SlideMenuControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlideMenuControllerSwift.xcconfig; sourceTree = "<group>"; };
+		1CB9F873B59036DC45332C13B5BC9B46 /* Pods-PaintApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaintApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		1D271C8853C8D73D8C0F3368D673FC4D /* Pods_PaintAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaintAppUITests.framework; path = "Pods-PaintAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E9DCA532FB166A89CC5681CABCC950 /* Pods-PaintAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaintAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		27B3D7B238E62768B6958F402A3B70E2 /* Pods-PaintApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaintApp-dummy.m"; sourceTree = "<group>"; };
+		2AB394E0B1092145830E786787C3A742 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC72A55E8B861D8BCE283D89B780FCF /* Pods-PaintAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaintAppUITests-dummy.m"; sourceTree = "<group>"; };
+		343BDD8EDD9A47530D9B46A90B217F9A /* Pods-PaintAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaintAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		366E7B6D66BA6DDF546210FE1141C96A /* Pods-PaintApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaintApp.debug.xcconfig"; sourceTree = "<group>"; };
+		373530EA8745D71FAAFD8FDDC26EA0C7 /* Pods-PaintAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaintAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		3A96B061F549EF9E9E2AB352546BB4E9 /* Pods_PaintAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaintAppTests.framework; path = "Pods-PaintAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A58569DBCDD0342BEA28E43BE2A7E2D /* SlideMenuControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-prefix.pch"; sourceTree = "<group>"; };
+		52C625589E3F89727B7BF44C10F8FBC2 /* Pods-PaintAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaintAppUITests-resources.sh"; sourceTree = "<group>"; };
+		55BA5622A560B88321685F73BFC91FEF /* Pods-PaintApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PaintApp.modulemap"; sourceTree = "<group>"; };
+		62D48B494B05A8EEBB563F72A44FB9F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		670308894CDD71D794BF1273C8B90AEB /* Pods-PaintApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaintApp.release.xcconfig"; sourceTree = "<group>"; };
+		6B0BE16C5184F679FEEAF8DFA5992B1A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773387845C3496D0EED908B8B5A4865C /* Pods-PaintApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaintApp-resources.sh"; sourceTree = "<group>"; };
+		8110A20D864C22E8570DA40FEABB3839 /* SlideMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = Source/SlideMenuController.swift; sourceTree = "<group>"; };
+		8325DBC0186DD9F6AB9AE628D5C6A6F7 /* Pods-PaintAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaintAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		89C1292CFBC9AAAFEE8DF3628934E5E6 /* Pods-PaintAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PaintAppTests-dummy.m"; sourceTree = "<group>"; };
+		8DDE423BB1977F2FF518885EE4FC6B6B /* Pods-PaintAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaintAppTests-umbrella.h"; sourceTree = "<group>"; };
+		9301BB05CB617B21FA9BF3506CA9486D /* Pods-PaintAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaintAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3F8BFC68E31B004AA0555AF82AA9BA5 /* Pods_PaintApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PaintApp.framework; path = "Pods-PaintApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50B42775AC08C83E74BD0DBF94E966C /* Pods-PaintAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaintAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE2E479D1C35C275A2F803A0FE06B17D /* SlideMenuControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideMenuControllerSwift-dummy.m"; sourceTree = "<group>"; };
+		C5EAE02AD38F82C22C1B301E06595317 /* Pods-PaintAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaintAppTests-resources.sh"; sourceTree = "<group>"; };
+		CCEE4A3F6A82618F1500DCBC80972FB0 /* Pods-PaintApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaintApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D26334D8CD6631080990206F7F1B5DB8 /* SlideMenuControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-umbrella.h"; sourceTree = "<group>"; };
+		D95913F69ABFED2C774E308B86F87AF9 /* Pods-PaintApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaintApp-umbrella.h"; sourceTree = "<group>"; };
+		DB3DC21A6851AD777BAA8683B3BE27B3 /* SlideMenuControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SlideMenuControllerSwift.modulemap; sourceTree = "<group>"; };
+		DCD30A9BD265C6002D444CCF4C65175A /* Pods-PaintAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaintAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0996FD5301F2092CAFFDA9A452D3F3E /* Pods-PaintApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaintApp-frameworks.sh"; sourceTree = "<group>"; };
+		E1EC1596A423B00C812B514035D003BD /* Pods-PaintAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PaintAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E8BD3173DEFB351321BB29C6EBD49C24 /* Pods-PaintAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PaintAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F19198AF529082CD64A4D22BF8BA4055 /* Pods-PaintAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PaintAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F787A4D2E43B9A9A3E1F0AA6B8C2A633 /* Pods-PaintAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PaintAppUITests.modulemap"; sourceTree = "<group>"; };
+		F8790E89663CAEDFAB76F52D7BF0C850 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF6838800073721CB5BE08252F452EE /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SlideMenuControllerSwift.framework; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		185A321E9A9762C5AAB9C23163D789C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44AE7543E1CD440B7AE09071F8D0FD01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA0CB1BB3D0EB8CA6C5621120A49D66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C9F6DCD6E4E53BC8CBA5F78B10AA22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A3092B6C5B9982FF8C1F6897269AF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76764CA01EBAD113289163ADE425AA8A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE9B2A16E097C87035A4F3D22FE2F60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4349CA3F5209BC7D5479FB6F534B2D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C820A1B9451D7647AE2C385C98ED4AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3F8BFC68E31B004AA0555AF82AA9BA5 /* Pods_PaintApp.framework */,
+				3A96B061F549EF9E9E2AB352546BB4E9 /* Pods_PaintAppTests.framework */,
+				1D271C8853C8D73D8C0F3368D673FC4D /* Pods_PaintAppUITests.framework */,
+				FBF6838800073721CB5BE08252F452EE /* SlideMenuControllerSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C5B9E4D131BE6BB64CE542A0B1B157F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AB394E0B1092145830E786787C3A742 /* Info.plist */,
+				DB3DC21A6851AD777BAA8683B3BE27B3 /* SlideMenuControllerSwift.modulemap */,
+				13920BA9A34B7B80F4D4D54C405722C0 /* SlideMenuControllerSwift.xcconfig */,
+				BE2E479D1C35C275A2F803A0FE06B17D /* SlideMenuControllerSwift-dummy.m */,
+				4A58569DBCDD0342BEA28E43BE2A7E2D /* SlideMenuControllerSwift-prefix.pch */,
+				D26334D8CD6631080990206F7F1B5DB8 /* SlideMenuControllerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SlideMenuControllerSwift";
+			sourceTree = "<group>";
+		};
+		4393C1F5D54983DE5C8FB5B5FDD487F6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				71EB14BA3ED628E5B1AECF765BD557A9 /* Pods-PaintApp */,
+				4D22BF82DCE65D45D857A9580ED46E76 /* Pods-PaintAppTests */,
+				78EB688AD706BE89D30C45C4504D3952 /* Pods-PaintAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4D22BF82DCE65D45D857A9580ED46E76 /* Pods-PaintAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B0BE16C5184F679FEEAF8DFA5992B1A /* Info.plist */,
+				0C64675639E4CE0F7FA83286962B42BE /* Pods-PaintAppTests.modulemap */,
+				B50B42775AC08C83E74BD0DBF94E966C /* Pods-PaintAppTests-acknowledgements.markdown */,
+				F19198AF529082CD64A4D22BF8BA4055 /* Pods-PaintAppTests-acknowledgements.plist */,
+				89C1292CFBC9AAAFEE8DF3628934E5E6 /* Pods-PaintAppTests-dummy.m */,
+				343BDD8EDD9A47530D9B46A90B217F9A /* Pods-PaintAppTests-frameworks.sh */,
+				C5EAE02AD38F82C22C1B301E06595317 /* Pods-PaintAppTests-resources.sh */,
+				8DDE423BB1977F2FF518885EE4FC6B6B /* Pods-PaintAppTests-umbrella.h */,
+				DCD30A9BD265C6002D444CCF4C65175A /* Pods-PaintAppTests.debug.xcconfig */,
+				11B878A05A3C6E96625B9A753B47EF94 /* Pods-PaintAppTests.release.xcconfig */,
+			);
+			name = "Pods-PaintAppTests";
+			path = "Target Support Files/Pods-PaintAppTests";
+			sourceTree = "<group>";
+		};
+		71EB14BA3ED628E5B1AECF765BD557A9 /* Pods-PaintApp */ = {
+			isa = PBXGroup;
+			children = (
+				F8790E89663CAEDFAB76F52D7BF0C850 /* Info.plist */,
+				55BA5622A560B88321685F73BFC91FEF /* Pods-PaintApp.modulemap */,
+				CCEE4A3F6A82618F1500DCBC80972FB0 /* Pods-PaintApp-acknowledgements.markdown */,
+				1CB9F873B59036DC45332C13B5BC9B46 /* Pods-PaintApp-acknowledgements.plist */,
+				27B3D7B238E62768B6958F402A3B70E2 /* Pods-PaintApp-dummy.m */,
+				E0996FD5301F2092CAFFDA9A452D3F3E /* Pods-PaintApp-frameworks.sh */,
+				773387845C3496D0EED908B8B5A4865C /* Pods-PaintApp-resources.sh */,
+				D95913F69ABFED2C774E308B86F87AF9 /* Pods-PaintApp-umbrella.h */,
+				366E7B6D66BA6DDF546210FE1141C96A /* Pods-PaintApp.debug.xcconfig */,
+				670308894CDD71D794BF1273C8B90AEB /* Pods-PaintApp.release.xcconfig */,
+			);
+			name = "Pods-PaintApp";
+			path = "Target Support Files/Pods-PaintApp";
+			sourceTree = "<group>";
+		};
+		78EB688AD706BE89D30C45C4504D3952 /* Pods-PaintAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62D48B494B05A8EEBB563F72A44FB9F4 /* Info.plist */,
+				F787A4D2E43B9A9A3E1F0AA6B8C2A633 /* Pods-PaintAppUITests.modulemap */,
+				E1EC1596A423B00C812B514035D003BD /* Pods-PaintAppUITests-acknowledgements.markdown */,
+				21E9DCA532FB166A89CC5681CABCC950 /* Pods-PaintAppUITests-acknowledgements.plist */,
+				2EC72A55E8B861D8BCE283D89B780FCF /* Pods-PaintAppUITests-dummy.m */,
+				373530EA8745D71FAAFD8FDDC26EA0C7 /* Pods-PaintAppUITests-frameworks.sh */,
+				52C625589E3F89727B7BF44C10F8FBC2 /* Pods-PaintAppUITests-resources.sh */,
+				9301BB05CB617B21FA9BF3506CA9486D /* Pods-PaintAppUITests-umbrella.h */,
+				8325DBC0186DD9F6AB9AE628D5C6A6F7 /* Pods-PaintAppUITests.debug.xcconfig */,
+				E8BD3173DEFB351321BB29C6EBD49C24 /* Pods-PaintAppUITests.release.xcconfig */,
+			);
+			name = "Pods-PaintAppUITests";
+			path = "Target Support Files/Pods-PaintAppUITests";
+			sourceTree = "<group>";
+		};
+		790C6657361277EA4001655A408366B9 /* SlideMenuControllerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8110A20D864C22E8570DA40FEABB3839 /* SlideMenuController.swift */,
+				3C5B9E4D131BE6BB64CE542A0B1B157F /* Support Files */,
+			);
+			name = SlideMenuControllerSwift;
+			path = SlideMenuControllerSwift;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CA428321F8257CD374B594CA29A4C7DF /* Pods */,
+				2C820A1B9451D7647AE2C385C98ED4AC /* Products */,
+				4393C1F5D54983DE5C8FB5B5FDD487F6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA428321F8257CD374B594CA29A4C7DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				790C6657361277EA4001655A408366B9 /* SlideMenuControllerSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		42D70FF707B82187A85B9B170F9DBE1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951F614EA01DAF13073C92A85676EA85 /* SlideMenuControllerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A77562C351FD64B713A84886ECECB98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B713D9A426EC522EA953F7C3A02D90B /* Pods-PaintApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88AE36DDBCA4E83811505B451EFF7432 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8829363D1E9F4A6E59D91B26A13ECFB5 /* Pods-PaintAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2699C56CB8232024DDB66D305A433F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC8CBAAA8D4D0954E308B823B609206 /* Pods-PaintAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57DE967FE6E72C8CE92DF0709BB9A699 /* Pods-PaintAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D38D8E5C4F859DF6D6DDEDA680DA70C /* Build configuration list for PBXNativeTarget "Pods-PaintAppTests" */;
+			buildPhases = (
+				8166E329B50D394930A17CAAB2A39E76 /* Sources */,
+				CAE9B2A16E097C87035A4F3D22FE2F60 /* Frameworks */,
+				CE2699C56CB8232024DDB66D305A433F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PaintAppTests";
+			productName = "Pods-PaintAppTests";
+			productReference = 3A96B061F549EF9E9E2AB352546BB4E9 /* Pods_PaintAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7DBE23B870D7D82FFA0757CD1F6FE88E /* SlideMenuControllerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60E6A45C181ED4479A706A0004B31E5 /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */;
+			buildPhases = (
+				8662EF8F66F7C49B53AF47E2B88F60B7 /* Sources */,
+				185A321E9A9762C5AAB9C23163D789C0 /* Frameworks */,
+				42D70FF707B82187A85B9B170F9DBE1E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideMenuControllerSwift;
+			productName = SlideMenuControllerSwift;
+			productReference = FBF6838800073721CB5BE08252F452EE /* SlideMenuControllerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B50235797A76AD732F1B6D2220B45928 /* Pods-PaintAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72F6BA96C9D21FFC295113EA6C6240A /* Build configuration list for PBXNativeTarget "Pods-PaintAppUITests" */;
+			buildPhases = (
+				4620C3EF79E674B3062DAC91572F0FF7 /* Sources */,
+				1AA0CB1BB3D0EB8CA6C5621120A49D66 /* Frameworks */,
+				88AE36DDBCA4E83811505B451EFF7432 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PaintAppUITests";
+			productName = "Pods-PaintAppUITests";
+			productReference = 1D271C8853C8D73D8C0F3368D673FC4D /* Pods_PaintAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C58ED8F7FDE629F0871D2012A2F9FF87 /* Pods-PaintApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D575F4F1A94EE92588AD6D71AE9B24A0 /* Build configuration list for PBXNativeTarget "Pods-PaintApp" */;
+			buildPhases = (
+				2188CDDB19C2A902C17EE4666BF017EB /* Sources */,
+				4A3092B6C5B9982FF8C1F6897269AF6C /* Frameworks */,
+				7A77562C351FD64B713A84886ECECB98 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85ADAB920A00161E4BF1E3FCD28D7107 /* PBXTargetDependency */,
+			);
+			name = "Pods-PaintApp";
+			productName = "Pods-PaintApp";
+			productReference = A3F8BFC68E31B004AA0555AF82AA9BA5 /* Pods_PaintApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2C820A1B9451D7647AE2C385C98ED4AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C58ED8F7FDE629F0871D2012A2F9FF87 /* Pods-PaintApp */,
+				57DE967FE6E72C8CE92DF0709BB9A699 /* Pods-PaintAppTests */,
+				B50235797A76AD732F1B6D2220B45928 /* Pods-PaintAppUITests */,
+				7DBE23B870D7D82FFA0757CD1F6FE88E /* SlideMenuControllerSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2188CDDB19C2A902C17EE4666BF017EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524409528BBBB9940C19649DAD016C38 /* Pods-PaintApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4620C3EF79E674B3062DAC91572F0FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6BCE062351101B4E8C58F7C5195883 /* Pods-PaintAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8166E329B50D394930A17CAAB2A39E76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1815647DEDEDF6214001464513D9576E /* Pods-PaintAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8662EF8F66F7C49B53AF47E2B88F60B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF0AF5F791B0E5EA09CDCD79F706E25 /* SlideMenuController.swift in Sources */,
+				BE26E84F75B04A36F67D16F86961AC05 /* SlideMenuControllerSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85ADAB920A00161E4BF1E3FCD28D7107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = 7DBE23B870D7D82FFA0757CD1F6FE88E /* SlideMenuControllerSwift */;
+			targetProxy = E2B1AFE024C018402449C72865ADC318 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		973E8FF86F17927D60DDCFBE06E5F752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B878A05A3C6E96625B9A753B47EF94 /* Pods-PaintAppTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaintAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaintAppTests/Pods-PaintAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaintAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B5A2A67A309420AB3005334E8027636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8BD3173DEFB351321BB29C6EBD49C24 /* Pods-PaintAppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaintAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaintAppUITests/Pods-PaintAppUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaintAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7705C8DBF78E6FAE3D2907DCF20664C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366E7B6D66BA6DDF546210FE1141C96A /* Pods-PaintApp.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaintApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaintApp/Pods-PaintApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaintApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A8E85781DBC84BE8696F48917E735259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13920BA9A34B7B80F4D4D54C405722C0 /* SlideMenuControllerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SlideMenuControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB78D54D58070E088C7FC5F71FE397A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13920BA9A34B7B80F4D4D54C405722C0 /* SlideMenuControllerSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SlideMenuControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C38FC9FB59E161DA9B864F4E9204C2AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8325DBC0186DD9F6AB9AE628D5C6A6F7 /* Pods-PaintAppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaintAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaintAppUITests/Pods-PaintAppUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaintAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9A88DAB736F758944CAFD7E8FC71C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD30A9BD265C6002D444CCF4C65175A /* Pods-PaintAppTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaintAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaintAppTests/Pods-PaintAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaintAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD4E637B46F96EB194299CE5B473994B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670308894CDD71D794BF1273C8B90AEB /* Pods-PaintApp.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PaintApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PaintApp/Pods-PaintApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PaintApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D38D8E5C4F859DF6D6DDEDA680DA70C /* Build configuration list for PBXNativeTarget "Pods-PaintAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9A88DAB736F758944CAFD7E8FC71C6B /* Debug */,
+				973E8FF86F17927D60DDCFBE06E5F752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72F6BA96C9D21FFC295113EA6C6240A /* Build configuration list for PBXNativeTarget "Pods-PaintAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38FC9FB59E161DA9B864F4E9204C2AC /* Debug */,
+				9B5A2A67A309420AB3005334E8027636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D575F4F1A94EE92588AD6D71AE9B24A0 /* Build configuration list for PBXNativeTarget "Pods-PaintApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7705C8DBF78E6FAE3D2907DCF20664C /* Debug */,
+				CD4E637B46F96EB194299CE5B473994B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60E6A45C181ED4479A706A0004B31E5 /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E85781DBC84BE8696F48917E735259 /* Debug */,
+				AB78D54D58070E088C7FC5F71FE397A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
