@@ -111,14 +111,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erc-AD-V5U">
-                                        <rect key="frame" x="137" y="530" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="onClickPickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ehh-4P-bgl"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPQ-6A-ykL">
@@ -138,11 +130,18 @@
                                                 </connections>
                                             </barButtonItem>
                                         </leftBarButtonItems>
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="5hS-lN-DX2">
-                                            <connections>
-                                                <action selector="onClickSave:" destination="BYZ-38-t0r" id="hAI-dh-g5m"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="Save" id="5hS-lN-DX2">
+                                                <connections>
+                                                    <action selector="onClickSave:" destination="BYZ-38-t0r" id="hAI-dh-g5m"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Load" id="nQx-Rf-fIM">
+                                                <connections>
+                                                    <action selector="onClickPickButton:" destination="BYZ-38-t0r" id="Igr-zc-c5V"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                             </navigationBar>

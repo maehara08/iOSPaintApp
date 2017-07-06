@@ -199,6 +199,9 @@ class CanvasView: UIImageView {
         uiImage.draw(in: CGRect(x:0, y:0, width: (self.parentView?.frame.width)!, height:(self.parentView?.frame.height)!))
         let resizeImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+        let myUIImageView = UIImageView(image: resizeImage)
+        myUIImageView.alpha = 0.5
+//        self.parentView.addSubview(myImageView)
         self.image = resizeImage
     }
     

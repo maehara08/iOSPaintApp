@@ -75,12 +75,23 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate{
         }
     }
     
-    
+    func setImageWithResize(uiImage :UIImage) {
+        let size = CGSize(width: (view.frame.width), height: (view.frame.height))
+        UIGraphicsBeginImageContext(size)
+        uiImage.draw(in: CGRect(x:0, y:0, width: (view.frame.width), height:(view.frame.height)))
+        let resizeImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        let myUIImageView = UIImageView(image: resizeImage)
+        myUIImageView.alpha = 0.5
+//        self.view.addSubview(myUIImageView)
+                self.canvasView.image = resizeImage
+    }
     // 写真を選択した時に呼ばれる
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            canvasView.contentMode = .scaleToFill
-            canvasView.setImageWithResize(uiImage: pickedImage)
+//            canvasView.contentMode = .scaleToFill
+//            canvasView.setImageWithResize(uiImage: pickedImage)
+            setImageWithResize(uiImage: pickedImage)
             
         }
         
