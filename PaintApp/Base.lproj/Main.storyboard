@@ -107,10 +107,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZr-IX-mOm" customClass="CanvasView" customModule="PaintApp" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfF-J9-OwO">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flower.png" translatesAutoresizingMaskIntoConstraints="NO" id="r9h-K2-aMs">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZr-IX-mOm" customClass="CanvasView" customModule="PaintApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPQ-6A-ykL">
@@ -149,7 +160,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="r9h-K2-aMs" id="xYi-tK-4Qa"/>
                         <outlet property="canvasView" destination="FZr-IX-mOm" id="cho-0r-7uW"/>
+                        <outlet property="containerView" destination="AfF-J9-OwO" id="jeX-uK-fPi"/>
                         <outlet property="scrollView" destination="TOa-j5-uCc" id="I9b-s7-M0V"/>
                     </connections>
                 </viewController>
@@ -160,7 +173,7 @@
                     <state key="normal" title="Button"/>
                 </button>
             </objects>
-            <point key="canvasLocation" x="1052" y="83"/>
+            <point key="canvasLocation" x="1051.875" y="82.394366197183103"/>
         </scene>
         <!--Slide View Controller-->
         <scene sceneID="5fZ-v0-INP">
@@ -181,4 +194,7 @@
             <point key="canvasLocation" x="199" y="82"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="flower.png" width="378" height="502"/>
+    </resources>
 </document>

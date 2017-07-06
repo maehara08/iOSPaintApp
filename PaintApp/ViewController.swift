@@ -14,6 +14,9 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var canvasView: CanvasView!
+    @IBOutlet weak var backgroundView: UIImageView!
+    
+    @IBOutlet weak var containerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +65,7 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     // scrollview delegetes
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        return self.canvasView
+        return self.containerView
     }
 
     // ライブラリから写真を選択する
@@ -83,8 +86,7 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate{
         UIGraphicsEndImageContext()
         let myUIImageView = UIImageView(image: resizeImage)
         myUIImageView.alpha = 0.5
-//        self.view.addSubview(myUIImageView)
-                self.canvasView.image = resizeImage
+        self.backgroundView.image = resizeImage
     }
     // 写真を選択した時に呼ばれる
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){

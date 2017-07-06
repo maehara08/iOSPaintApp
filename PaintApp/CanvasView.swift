@@ -68,8 +68,8 @@ class CanvasView: UIImageView {
         // キャンバス用にからのUIImageを作成
         var firstCanvasImage = UIImage()
         // 塗りつぶす
-        UIColor.white.setFill()
-        UIRectFill(canvasRect)
+//        UIColor.white.setFill()
+//        UIRectFill(canvasRect)
         // contextから塗りつぶしたImageを取得
         firstCanvasImage = UIGraphicsGetImageFromCurrentImageContext()!
         // contentModeの設定 http://zutto-megane.com/objective-c/post-155/
@@ -78,8 +78,6 @@ class CanvasView: UIImageView {
         self.image = firstCanvasImage
         // context 終了
         UIGraphicsEndImageContext()
-        let image = UIImage(named: "flower.png")
-        //        self.image = image
     }
     
     /**
@@ -191,18 +189,6 @@ class CanvasView: UIImageView {
      */
     func saveImage() {
         UIImageWriteToSavedPhotosAlbum(self.image!, self, nil, nil)
-    }
-    
-    func setImageWithResize(uiImage :UIImage) {
-        let size = CGSize(width: (self.parentView?.frame.width)!, height: (self.parentView?.frame.height)!)
-        UIGraphicsBeginImageContext(size)
-        uiImage.draw(in: CGRect(x:0, y:0, width: (self.parentView?.frame.width)!, height:(self.parentView?.frame.height)!))
-        let resizeImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        let myUIImageView = UIImageView(image: resizeImage)
-        myUIImageView.alpha = 0.5
-//        self.parentView.addSubview(myImageView)
-        self.image = resizeImage
     }
     
     func allDelete() {
