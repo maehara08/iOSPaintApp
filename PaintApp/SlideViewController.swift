@@ -13,7 +13,10 @@ class SlideViewController: SlideMenuController {
     
     override func awakeFromNib() {
         let mainVC = storyboard?.instantiateViewController(withIdentifier: "Main") as! ViewController
-        let leftVC = storyboard?.instantiateViewController(withIdentifier: "Left")
+        let leftVC = storyboard?.instantiateViewController(withIdentifier: "Left") as! LeftViewController
+      
+        leftVC.delegate = mainVC
+      
         //UIViewControllerにはNavigationBarは無いためUINavigationControllerを生成しています。
 //        let navigationController = UINavigationController(rootViewController: mainVC!)
         //ライブラリ特有のプロパティにセット

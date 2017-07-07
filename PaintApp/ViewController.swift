@@ -100,3 +100,21 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate{
         picker.dismiss(animated: true, completion: nil)
     }
 }
+
+
+
+extension ViewController: LeftViewControllerDelegate {
+    func leftViewController(didSetLineWidth width: CGFloat) {
+        canvasView.lineWidth = width
+    }
+    
+    func leftViewController(didSetDrawColort drawColor: UIColor, elaseAlpha: CGFloat, blendMode: CGBlendMode) {
+        canvasView.drawColor = drawColor
+        canvasView.elaseAlpha = elaseAlpha
+        canvasView.cgBlendMode = blendMode
+    }
+    
+    func leftViewControllerDidAllDelete() {
+        canvasView.allDelete()
+    }
+}
