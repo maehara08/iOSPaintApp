@@ -33,9 +33,6 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate{
         scrollView.maximumZoomScale = 4.0                   // 最大拡大率
         scrollView.zoomScale = 1.0                          // 表示時の拡大率(初期値)
         canvasView.initCanvas(uiView: view, scrollView: scrollView)
-        let delegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        delegate.canvasView=self.canvasView
-        
     }
     
     override func didReceiveMemoryWarning() {
